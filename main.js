@@ -8,10 +8,7 @@
 //     number: "947500000",
 //     userName: "AU"
 // }
-// let arr = Object.keys(person);
-// let arr1 = Object.values(person);
-// console.log(arr, arr1);
-
+// console.log(`${Object.keys(person)} - ${Object.values(person)}`);
 // 2-masala
 // const person1={
 //     name:"Abdulloh",
@@ -67,6 +64,40 @@
 // let wordsArray = promptWords(6);
 // console.log(wordsArray);
 
+// 7-masala
+
+// 7.
+// let questionArr = []
+// function fillQuestion(size){
+//     let questionValue = prompt("Savol kiriting")
+//     questionArr.push(questionValue)
+//     let newSize = size - 1
+//     if(newSize > 0){
+//         fillQuestion(newSize)
+//     }
+// }
+// fillQuestion(3)
+
+// let answerList = []
+// function addAnswer(){
+//     for(let ans of questionArr){
+//         let answerValue = prompt(ans + " savolga javob?")
+//         answerList.push(answerValue)
+//     }
+// }
+// addAnswer()
+
+// function concatQandA(questionArr, answerArr){
+//     for(let i = 0; i < questionArr.length ;i++){
+//         for(let j = 0; j < answerArr.length ;j++){
+//             if( i == j){
+//                 console.log(`${questionArr[i]} - ${answerArr[j]}`);
+//             }
+//         }
+//     }
+// }
+// concatQandA(questionArr, answerList)
+
 // ----------------------2-topshiriq-----------------
 // function addPrompFunc() {
 //     let word = prompt("Iltimos, so'z kiriting:");
@@ -77,23 +108,26 @@
 // let resultArray = addPrompFunc();
 // console.log(resultArray);
 
-// 2-masala
-// let arr1=[1,2,3,4,5]
-// let arr2=[10,5,4,6,7,8]
+// 2.
+// let numbers1 = [43,21,45,22]
+// let numbers2 = [33, 45, 43, 55]
 
-// function myFunction(a,b){
-//     let array=[]
-//     for(let num of a){
-
-//         for(let num1 of b){
-//             if(num==num1){
-//                 array.push(num)
+// function findSameNumbers(arr1, arr2){
+//     let newArr = []
+//     for(let num1 of arr1){
+//         for(let num2 of arr2){
+//             if(num1 == num2){
+//                 newArr.push(num1)
 //             }
 //         }
 //     }
-//     console.log(array);
+//     for(let num of newArr){
+//         arr1.unshift(num)
+//         arr2.unshift(num)
+//     }
+//     console.log(arr1, arr2);
 // }
-// myFunction(arr1, arr2)
+// findSameNumbers(numbers1, numbers2)
 
 // 3-masala
 // let obj={
